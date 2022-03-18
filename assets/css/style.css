@@ -1,8 +1,10 @@
-body{}
+body{
+    font-family: 'Roboto', sans-serif;
+}
 
 .container{
     width: 100%;
-    max-width: 1200px;
+    max-width: 980px;
     margin: 0 auto; /*tecnica pra alinhar no centro*/
 
     display: flex;
@@ -73,10 +75,26 @@ body{}
 
 .conteudoPrincipa_feed{}
 .conteudoPrincipal_listaTweets{}
-.conteudoPrincipal_tweet {}
+.conteudoPrincipal_tweet {
+    padding: 20px 32px;
+    display: flex;
+    align-items: flex-start; /*alinhamento vertical*/
+    border-bottom: 1px solid #ddd;
+}
+    
 
 .tweet_fotoPerfil{}
-.tweet_conteudo{}
-.tweet_conteudo h2{}
-.tweet_conteudo span{}
-.tweet_conteudo p{}
+.tweet_conteudo{
+    margin-left: 10px;
+}
+.tweet_conteudo h2{
+    display: inline-block;
+}
+.tweet_conteudo spam{
+    display: inline-block;
+    color: #828282;
+}
+.tweet_conteudo p{
+    margin-top: 15px;
+    color: #333333;
+}
